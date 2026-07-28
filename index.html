@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devajith S B — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== BACKGROUND EFFECTS ===== -->
+  <div class="bg-effects" aria-hidden="true">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    <div class="bg-particle-grid"></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="home">
+    <nav class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="nav-brand-icon">D</span>
+        <span class="nav-brand-text">Devajith <small>SB</small></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="resume.pdf" download class="btn btn-primary btn-sm nav-cta">
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================================ -->
+    <!--  HERO                            -->
+    <!-- ================================ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-visual">
+          <div class="hero-illustration">
+            <svg viewBox="0 0 400 400" class="dev-svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="hBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#437FC7" stop-opacity="0.06"/>
+                  <stop offset="100%" stop-color="#6DAFFE" stop-opacity="0.18"/>
+                </linearGradient>
+                <linearGradient id="hCode" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#437FC7" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#2a5f9e" stop-opacity="0.3"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="400" rx="44" fill="url(#hBg)"/>
+              <rect x="65" y="70" width="270" height="180" rx="18" fill="url(#hCode)" opacity="0.15"/>
+              <rect x="65" y="70" width="270" height="180" rx="18" stroke="#437FC7" stroke-width="1.2" fill="none" opacity="0.25"/>
+              <rect x="82" y="88" width="160" height="12" rx="6" fill="#437FC7" opacity="0.3"/>
+              <rect x="82" y="110" width="120" height="10" rx="5" fill="#6DAFFE" opacity="0.25"/>
+              <rect x="82" y="132" width="140" height="10" rx="5" fill="#6DAFFE" opacity="0.2"/>
+              <rect x="82" y="154" width="100" height="10" rx="5" fill="#6DAFFE" opacity="0.18"/>
+              <rect x="82" y="178" width="180" height="10" rx="5" fill="#6DAFFE" opacity="0.15"/>
+              <rect x="82" y="198" width="110" height="10" rx="5" fill="#6DAFFE" opacity="0.12"/>
+              <rect x="260" y="88" width="60" height="120" rx="10" fill="#B9732F" opacity="0.12"/>
+              <rect x="270" y="100" width="40" height="8" rx="4" fill="#B9732F" opacity="0.25"/>
+              <rect x="270" y="118" width="40" height="8" rx="4" fill="#B9732F" opacity="0.2"/>
+              <rect x="270" y="136" width="40" height="8" rx="4" fill="#B9732F" opacity="0.18"/>
+              <rect x="270" y="154" width="40" height="8" rx="4" fill="#B9732F" opacity="0.15"/>
+              <rect x="82" y="228" width="236" height="50" rx="12" fill="#437FC7" opacity="0.04"/>
+              <rect x="95" y="240" width="120" height="26" rx="8" fill="#B9732F" opacity="0.15"/>
+              <circle cx="110" cy="315" r="38" stroke="#437FC7" stroke-width="2" fill="none" opacity="0.15" class="pulse-ring"/>
+              <circle cx="280" cy="315" r="28" stroke="#6DAFFE" stroke-width="2" fill="none" opacity="0.12" class="pulse-ring" style="animation-delay:0.6s"/>
+              <circle cx="200" cy="345" r="18" stroke="#B9732F" stroke-width="2" fill="none" opacity="0.1" class="pulse-ring" style="animation-delay:1.2s"/>
+            </svg>
+            <div class="float-badge fb-1"><i class="fas fa-code"></i> Python</div>
+            <div class="float-badge fb-2"><i class="fas fa-layer-group"></i> Django</div>
+            <div class="float-badge fb-3"><i class="fas fa-plug"></i> REST APIs</div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <span class="hero-greeting"><i class="fas fa-hand-peace"></i> Hello, I'm</span>
+          <h1 class="hero-name">
+            Devajith <span class="gradient-text">S B</span>
+          </h1>
+          <div class="hero-titles">
+            <span class="hero-title-item">MCA Student</span>
+            <span class="hero-title-item">Python Developer</span>
+            <span class="hero-title-item">Backend Developer</span>
+            <span class="hero-title-item">AI &amp; Data Science Enthusiast</span>
+          </div>
+          <p class="hero-desc">
+            MCA student at Pondicherry University passionate about Backend Development,
+            Artificial Intelligence, Machine Learning and Data Science. I build scalable
+            applications and continuously explore emerging technologies.
+          </p>
+          <div class="hero-actions">
+            <a href="resume.pdf" download class="btn btn-primary btn-lg">
+              <i class="fas fa-file-arrow-down"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://linkedin.com/in/devajith-s-b-282054287" target="_blank" class="hero-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/devajithsb" target="_blank" class="hero-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:devajithsb@gmail.com" class="hero-social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="#EDF6FF"/></svg>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!--  ABOUT                           -->
+    <!-- ================================ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <div>
+            <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+            <h2 class="section-title">Who <span class="gradient-text">I Am</span></h2>
+          </div>
+        </div>
+        <div class="about-grid fade-in">
+          <div class="about-image">
+            <div class="about-image-frame">
+              <div class="about-image-inner">
+                <img src="photo.jpg" alt="Devajith S B" />
+              </div>
+              <div class="about-dots-pattern"></div>
+            </div>
+          </div>
+          <div class="about-text">
+            <p class="about-lead">
+              <i class="fas fa-graduation-cap" style="color:var(--primary)"></i>
+              MCA Student at Pondicherry University &mdash; B.Voc Data Science
+            </p>
+            <p>
+              I am currently pursuing my Master of Computer Applications at Pondicherry University,
+              building on a strong foundation in Data Science from St. Thomas College (Autonomous).
+              My core expertise lies in <strong>Python development</strong>, <strong>backend architecture</strong>,
+              <strong>REST API design</strong>, and <strong>database management</strong> with PostgreSQL and MySQL.
+            </p>
+            <p>
+              I am deeply passionate about <strong>Artificial Intelligence</strong> and <strong>Data Science</strong>,
+              constantly exploring how data-driven solutions can solve real-world problems. As a quick learner
+              with strong team collaboration skills, I thrive in environments that challenge me to grow and innovate.
+            </p>
+            <div class="about-tags">
+              <span class="tag"><i class="fas fa-graduation-cap"></i> MCA Student</span>
+              <span class="tag"><i class="fas fa-chart-bar"></i> B.Voc Data Science</span>
+              <span class="tag"><i class="fab fa-python"></i> Python Developer</span>
+              <span class="tag"><i class="fas fa-server"></i> Backend Developer</span>
+              <span class="tag"><i class="fas fa-link"></i> REST API Development</span>
+              <span class="tag"><i class="fas fa-database"></i> Database Management</span>
+              <span class="tag"><i class="fas fa-robot"></i> AI Enthusiast</span>
+              <span class="tag"><i class="fas fa-rocket"></i> Quick Learner</span>
+              <span class="tag"><i class="fas fa-users"></i> Team Collaboration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!--  EXPERIENCE                      -->
+    <!-- ================================ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <div>
+            <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+            <h2 class="section-title">Where I've <span class="gradient-text">Worked</span></h2>
+          </div>
+        </div>
+        <div class="timeline fade-in">
+          <div class="timeline-track"></div>
+          <div class="timeline-node">
+            <div class="timeline-dot">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Python Developer Intern</h3>
+                  <span class="timeline-org"><i class="fas fa-building"></i> Nth Index Software Solutions LLP</span>
+                </div>
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Dec 2024 &ndash; Mar 2025</span>
+              </div>
+              <p class="timeline-desc">
+                Developed production-grade REST APIs and backend systems for client projects
+                in an Agile environment, collaborating with cross-functional teams using Git.
+              </p>
+              <ul class="timeline-tech">
+                <li><i class="fas fa-check-circle"></i> REST API Development</li>
+                <li><i class="fas fa-check-circle"></i> Django REST Framework</li>
+                <li><i class="fas fa-check-circle"></i> Authentication &amp; Authorization</li>
+                <li><i class="fas fa-check-circle"></i> API Versioning</li>
+                <li><i class="fas fa-check-circle"></i> PostgreSQL &amp; MySQL</li>
+                <li><i class="fas fa-check-circle"></i> Third-party API Integration</li>
+                <li><i class="fas fa-check-circle"></i> Git Collaboration</li>
+                <li><i class="fas fa-check-circle"></i> Agile Methodology</li>
+                <li><i class="fas fa-check-circle"></i> Debugging &amp; Optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!--  PROJECTS                        -->
+    <!-- ================================ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <div>
+            <span class="section-tag"><i class="fas fa-code-branch"></i> Projects</span>
+            <h2 class="section-title">Professional <span class="gradient-text">Work</span></h2>
+          </div>
+        </div>
+        <div class="projects-list">
+
+          <div class="project-item glass-card fade-in">
+            <div class="project-visual">
+              <div class="project-icon-box" style="background:linear-gradient(135deg,rgba(67,127,199,0.1),rgba(109,175,254,0.15));">
+                <i class="fas fa-car"></i>
+              </div>
+              <div class="project-mock">
+                <i class="fas fa-database"></i>
+                <i class="fas fa-server"></i>
+                <i class="fas fa-code"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Tyre Guard</h3>
+              <p>Developed backend APIs for a vehicle maintenance and service booking application, ensuring smooth scheduling and user management.</p>
+              <div class="project-tech-list">
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fab fa-python"></i> Django</span>
+                <span><i class="fas fa-cubes"></i> DRF</span>
+                <span><i class="fas fa-database"></i> PostgreSQL</span>
+                <span><i class="fas fa-plug"></i> REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item glass-card fade-in">
+            <div class="project-visual">
+              <div class="project-icon-box" style="background:linear-gradient(135deg,rgba(185,115,47,0.1),rgba(212,143,74,0.15));">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <div class="project-mock">
+                <i class="fas fa-database"></i>
+                <i class="fas fa-cogs"></i>
+                <i class="fas fa-code"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>CMC 16 Batch</h3>
+              <p>Backend development for a batch management system improving workflow automation and data handling processes.</p>
+              <div class="project-tech-list">
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fab fa-python"></i> Django</span>
+                <span><i class="fas fa-plug"></i> REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item glass-card fade-in">
+            <div class="project-visual">
+              <div class="project-icon-box" style="background:linear-gradient(135deg,rgba(67,127,199,0.1),rgba(109,175,254,0.15));">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div class="project-mock">
+                <i class="fas fa-database"></i>
+                <i class="fas fa-server"></i>
+                <i class="fas fa-code"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Task Management System</h3>
+              <p>Developed REST APIs for task allocation, tracking, and prioritization with comprehensive user management.</p>
+              <div class="project-tech-list">
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fas fa-cubes"></i> DRF</span>
+                <span><i class="fas fa-database"></i> MySQL</span>
+                <span><i class="fas fa-database"></i> PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!--  EDUCATION                       -->
+    <!-- ================================ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <div>
+            <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+            <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+          </div>
+        </div>
+        <div class="edu-horizontal fade-in">
+          <div class="edu-track"></div>
+          <div class="edu-cards">
+            <div class="edu-card glass-card">
+              <div class="edu-icon"><i class="fas fa-university"></i></div>
+              <span class="edu-year">2025 &ndash; Present</span>
+              <h3>Master of Computer Applications</h3>
+              <p class="edu-institute">Pondicherry University</p>
+              <span class="edu-status current"><i class="fas fa-spinner fa-pulse"></i> Pursuing</span>
+            </div>
+            <div class="edu-card glass-card">
+              <div class="edu-icon"><i class="fas fa-university"></i></div>
+              <span class="edu-year">2022 &ndash; 2025</span>
+              <h3>B.Voc Data Science</h3>
+              <p class="edu-institute">St. Thomas College (Autonomous)</p>
+              <span class="edu-status done"><i class="fas fa-check-circle"></i> Completed</span>
+            </div>
+            <div class="edu-card glass-card">
+              <div class="edu-icon"><i class="fas fa-school"></i></div>
+              <span class="edu-year">Higher Secondary</span>
+              <h3>PHSS Perambra</h3>
+              <p class="edu-institute">Kozhikode</p>
+              <span class="edu-status done"><i class="fas fa-check-circle"></i> Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!--  SKILLS                          -->
+    <!-- ================================ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <div>
+            <span class="section-tag"><i class="fas fa-cogs"></i> Skills</span>
+            <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+          </div>
+        </div>
+        <div class="skills-grid fade-in">
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fas fa-code" style="color:#437FC7"></i></div>
+              <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fab fa-html5" style="color:#e34f26"></i></div>
+              <span class="skill-name">HTML</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fab fa-css3-alt" style="color:#1572b6"></i></div>
+              <span class="skill-name">CSS</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fab fa-python" style="color:#437FC7"></i></div>
+              <span class="skill-name">Django</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fas fa-cubes" style="color:#437FC7"></i></div>
+              <span class="skill-name">Django REST Framework</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fas fa-plug" style="color:#437FC7"></i></div>
+              <span class="skill-name">REST APIs</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fas fa-database" style="color:#336791"></i></div>
+              <span class="skill-name">PostgreSQL</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fas fa-database" style="color:#4479a1"></i></div>
+              <span class="skill-name">MySQL</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(185,115,47,0.1)"><i class="fas fa-chart-line" style="color:#B9732F"></i></div>
+              <span class="skill-name">Power BI</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fas fa-table" style="color:#217346"></i></div>
+              <span class="skill-name">Excel</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(185,115,47,0.1)"><i class="fas fa-chart-pie" style="color:#B9732F"></i></div>
+              <span class="skill-name">Tableau</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-head">
+              <div class="skill-icon" style="background:rgba(67,127,199,0.1)"><i class="fab fa-git-alt" style="color:#f05032"></i></div>
+              <span class="skill-name">Git &amp; GitHub</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!--  CERTIFICATES                    -->
+    <!-- ================================ -->
+    <section class="section section-alt" id="certificates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <div>
+            <span class="section-tag"><i class="fas fa-certificate"></i> Certificates</span>
+            <h2 class="section-title">My <span class="gradient-text">Credentials</span></h2>
+          </div>
+        </div>
+        <div class="cert-grid fade-in">
+          <div class="cert-card glass-card">
+            <div class="cert-ribbon"><i class="fas fa-award"></i> Verified</div>
+            <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+            <h4>Python Developer Internship</h4>
+            <p>Nth Index Software Solutions</p>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-ribbon"><i class="fas fa-award"></i> Verified</div>
+            <div class="cert-icon"><i class="fas fa-layer-group"></i></div>
+            <h4>Python Full Stack Development</h4>
+            <p>Professional Certification</p>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-ribbon"><i class="fas fa-award"></i> Verified</div>
+            <div class="cert-icon"><i class="fab fa-python"></i></div>
+            <h4>IBM Python 101 for Data Science</h4>
+            <p>IBM Cognitive Class</p>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-ribbon"><i class="fas fa-award"></i> Verified</div>
+            <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+            <h4>Masters in Digital Marketing</h4>
+            <p>Professional Certification</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!--  CONTACT                         -->
+    <!-- ================================ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <div>
+            <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          </div>
+        </div>
+        <div class="contact-grid fade-in">
+          <div class="contact-info">
+            <p class="contact-intro">
+              I'm currently open to backend development, AI projects, and internship opportunities.
+              Let's connect and build something impactful together.
+            </p>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-value">+91 7012400578</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">devajithsb@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div>
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">/in/devajith-s-b-282054287</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">/devajithsb</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Pondicherry, India</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="https://linkedin.com/in/devajith-s-b-282054287" target="_blank" class="contact-social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/devajithsb" target="_blank" class="contact-social-link"><i class="fab fa-github"></i></a>
+              <a href="mailto:devajithsb@gmail.com" class="contact-social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <form class="contact-form glass-card" id="contactForm">
+            <h3 class="form-title">Send a Message</h3>
+            <div class="form-group">
+              <input id="name" type="text" required placeholder=" " />
+              <label for="name">Your Name</label>
+              <span class="form-focus-border"></span>
+            </div>
+            <div class="form-group">
+              <input id="email" type="email" required placeholder=" " />
+              <label for="email">Email Address</label>
+              <span class="form-focus-border"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="4" required placeholder=" "></textarea>
+              <label for="message">Your Message</label>
+              <span class="form-focus-border"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" id="formSubmit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================ -->
+  <!--  FOOTER                          -->
+  <!-- ================================ -->
+  <footer class="footer">
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#437FC7"/></svg>
+    </div>
+    <div class="footer-body">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <span class="footer-icon">D</span>
+          <span class="footer-name">Devajith S B</span>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/devajith-s-b-282054287" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/devajithsb" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:devajithsb@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Devajith S B. Crafted with <i class="fas fa-heart" style="color:#B9732F"></i></p>
+        <a href="#home" class="footer-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="script.js"></script>
+</body>
+</html>
